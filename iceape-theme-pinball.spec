@@ -4,16 +4,19 @@ Summary:	Great theme - it doesn't take much space
 Summary(pl.UTF-8):	Przepiękny motyw - idealny kompromis pomiędzy rozmiarem i czytelnością
 Name:		iceape-theme-pinball
 Version:	2007.02.02
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://mozilla-themes.schellen.net/%{_realname}_%{_snap}.jar
-# Source0-md5:	4e7575cbb285d341c10e1ff9dacc7f96
+#Source0:	http://mozilla-themes.schellen.net/%{_realname}_%{_snap}.jar
+# version with non-free logos replaced
+Source0:	%{_realname}_%{_snap}.jar
+# Source0-md5:	5881ea9c0e9d52c7d613c4ac171ddc8a
 Source1:	gen-installed-chrome.sh
 URL:		http://mozilla-themes.schellen.net/
 Requires(post,postun):	iceape >= 1.1
 Requires(post,postun):	textutils
 Requires:	iceape >= 1.1
+Obsoletes:	seamonkey-theme-pinball
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
