@@ -13,6 +13,8 @@ Source0:	%{_realname}_%{_snap}.jar
 # Source0-md5:	5881ea9c0e9d52c7d613c4ac171ddc8a
 Source1:	gen-installed-chrome.sh
 URL:		http://mozilla-themes.schellen.net/
+BuildRequires:	perl-base
+BuildRequires:	unzip
 Requires(post,postun):	iceape >= 1.1
 Requires(post,postun):	textutils
 Requires:	iceape >= 1.1
