@@ -50,10 +50,12 @@ install %{_realname}-installed-chrome.txt $RPM_BUILD_ROOT%{_chromedir}
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%{_sbindir}/iceape-chrome+xpcom-generate
+if [ "$1" = 1 ]; then
+	%{_sbindir}/iceape-chrome+xpcom-generate
+fi
 
 %postun
-%{_sbindir}/iceape-chrome+xpcom-generate
+[ ! -x %{_sbindir}/iceape-chrome+xpcom-generate ] || %{_sbindir}/iceape-chrome+xpcom-generate
 
 %files
 %defattr(644,root,root,755)
