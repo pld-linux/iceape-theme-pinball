@@ -4,7 +4,7 @@ Summary:	Great theme - it doesn't take much space
 Summary(pl.UTF-8):	Przepiękny motyw - idealny kompromis pomiędzy rozmiarem i czytelnością
 Name:		iceape-theme-pinball
 Version:	2007.02.02
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
 #Source0:	http://mozilla-themes.schellen.net/%{_realname}_%{_snap}.jar
